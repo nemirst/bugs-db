@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_ADAS_D5_BugsContextDataSetReports" targetNamespace="http://tempuri.org/_ADAS_D5_BugsContextDataSetReports.xsd" xmlns:mstns="http://tempuri.org/_ADAS_D5_BugsContextDataSetReports.xsd" xmlns="http://tempuri.org/_ADAS_D5_BugsContextDataSetReports.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ADAS_D5_BugsContextConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ADAS_D5_BugsContextConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ADAS_D5.Properties.Settings.GlobalReference.Default.ADAS_D5_BugsContextConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewCombinedTableAdapter" GeneratorDataComponentClassName="ViewCombinedTableAdapter" Name="ViewCombined" UserDataComponentName="ViewCombinedTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ADAS_D5_BugsContextConnectionString (Settings)" DbObjectName="[ADAS_D5.BugsContext].dbo.ViewCombined" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Email, Name, Surname, BugId, Title, EmployeeEmail, Description, DueDate, Status, NameSurname FROM dbo.ViewCombined</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="BugId" DataSetColumn="BugId" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="EmployeeEmail" DataSetColumn="EmployeeEmail" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="DueDate" DataSetColumn="DueDate" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="NameSurname" DataSetColumn="NameSurname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_ADAS_D5_BugsContextDataSetReports" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_ADAS_D5_BugsContextDataSetReports" msprop:Generator_UserDSName="_ADAS_D5_BugsContextDataSetReports">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewCombined" msprop:Generator_TableClassName="ViewCombinedDataTable" msprop:Generator_TableVarName="tableViewCombined" msprop:Generator_RowChangedName="ViewCombinedRowChanged" msprop:Generator_TablePropName="ViewCombined" msprop:Generator_RowDeletingName="ViewCombinedRowDeleting" msprop:Generator_RowChangingName="ViewCombinedRowChanging" msprop:Generator_RowEvHandlerName="ViewCombinedRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewCombinedRowDeleted" msprop:Generator_RowClassName="ViewCombinedRow" msprop:Generator_UserTableName="ViewCombined" msprop:Generator_RowEvArgName="ViewCombinedRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BugId" msprop:Generator_ColumnVarNameInTable="columnBugId" msprop:Generator_ColumnPropNameInRow="BugId" msprop:Generator_ColumnPropNameInTable="BugIdColumn" msprop:Generator_UserColumnName="BugId" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeEmail" msprop:Generator_ColumnVarNameInTable="columnEmployeeEmail" msprop:Generator_ColumnPropNameInRow="EmployeeEmail" msprop:Generator_ColumnPropNameInTable="EmployeeEmailColumn" msprop:Generator_UserColumnName="EmployeeEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DueDate" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" msprop:Generator_UserColumnName="DueDate" type="xs:dateTime" />
+              <xs:element name="Status" msdata:DataType="ADAS_D5.Status, ADAS_D5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:anyType" />
+              <xs:element name="NameSurname" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNameSurname" msprop:Generator_ColumnPropNameInRow="NameSurname" msprop:Generator_ColumnPropNameInTable="NameSurnameColumn" msprop:Generator_UserColumnName="NameSurname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewCombined" />
+      <xs:field xpath="mstns:Email" />
+      <xs:field xpath="mstns:BugId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
