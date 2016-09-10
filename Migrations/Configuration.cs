@@ -14,6 +14,19 @@ namespace ADAS_D5.Migrations
 
         protected override void Seed(ADAS_D5.BugsContext context)
         {
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data. E.g.
+            //
+            //    context.People.AddOrUpdate(
+            //      p => p.FullName,
+            //      new Person { FullName = "Andrew Peters" },
+            //      new Person { FullName = "Brice Lambson" },
+            //      new Person { FullName = "Rowan Miller" }
+            //    );
+            //
+
             context.Employees.AddOrUpdate(x => x.Email,
                 new Employee { Email = "lauris.liparts@company.com", Name = "Lauris", Surname = "Liparts" },
                 new Employee { Email = "janis.ozols@company.com", Name = "Jânis", Surname = "Ozols" },
@@ -32,18 +45,6 @@ namespace ADAS_D5.Migrations
                 new Bug { BugId = 9, Title = "Bug #09", Description = "Description of bug #09", EmployeeEmail = "lauris.liparts@company.com", Status = Status.OPEN, DueDate = new DateTime(2016, 09, 18, 12, 0, 0) },
                 new Bug { BugId = 10, Title = "Bug #10", Description = "Description of bug #10", EmployeeEmail = "janis.ozols@company.com", Status = Status.RESOLVED, DueDate = new DateTime(2016, 09, 19, 12, 0, 0) }
                 );
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
         }
     }
 }

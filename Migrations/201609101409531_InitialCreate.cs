@@ -3,7 +3,7 @@ namespace ADAS_D5.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Test1 : DbMigration
+    public partial class InitialCreate : DbMigration
     {
         public override void Up()
         {
