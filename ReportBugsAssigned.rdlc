@@ -1154,7 +1154,7 @@ Fields!Status.Value=3, "CLOSED"
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>_ADAS_D5_BugsContextDataSetReports</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Admin\Documents\Visual Studio 2013\Projects\ADAS_D5\ADAS_D5\_ADAS_D5_BugsContextDataSetReports.xsd</rd:SchemaPath>
+        <rd:SchemaPath>_ADAS_D5_BugsContextDataSetReports.xsd</rd:SchemaPath>
         <rd:TableName>ViewCombined</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
