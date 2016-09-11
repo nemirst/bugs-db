@@ -111,6 +111,7 @@
     <Compile Include="FormReports.Designer.cs">
       <DependentUpon>FormReports.cs</DependentUpon>
     </Compile>
+    <Compile Include="SourceFilters.cs" />
     <Compile Include="_ADAS_D5_BugsContextDataSet.cs">
       <DependentUpon>_ADAS_D5_BugsContextDataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
