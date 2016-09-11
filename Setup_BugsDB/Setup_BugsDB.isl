@@ -342,6 +342,13 @@
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>BugsDB.Primary_output</td><td>{81EFFB6B-7D16-4DD4-9666-58D4EEED41B4}</td><td>INSTALLDIR</td><td>2</td><td/><td>bugsdb.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>BugsDB.Primary_output1</td><td>{E01F7075-B1B9-478A-A85B-E64EE83D764C}</td><td>INSTALLDIR</td><td>2</td><td/><td>bugsdb.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td>{24E875DF-E1FD-4D39-9CFC-8D0F9B828E13}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.ReportViewer.Common.dll</td><td>{1BA7FF51-6902-4111-B23A-E04AD82C11BF}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.reportviewer.commo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.ReportViewer.DataVisualization.dll</td><td>{BC2A5462-4EC9-4059-AA19-52B80A9AE7B0}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.reportviewer.datav</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.ReportViewer.ProcessingObjectModel.DLL</td><td>{9961A497-0345-4573-AD16-9586043BEADB}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.reportviewer.proce</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.ReportViewer.WinForms.dll</td><td>{DB9CCD01-F356-4A12-A83B-1417F71BD682}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.reportviewer.winfo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.SqlServer.Types.dll</td><td>{DF70027A-3B6A-4ACD-922C-AB37C6A5A8E7}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.sqlserver.types.dl</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1052,6 +1059,13 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>INSTALLDIR</td><td>BugsDB.Primary_output</td></row>
+		<row><td>INSTALLDIR</td><td>BugsDB.Primary_output1</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>INSTALLDIR</td><td>Microsoft.ReportViewer.Common.dll</td></row>
+		<row><td>INSTALLDIR</td><td>Microsoft.ReportViewer.DataVisualization.dll</td></row>
+		<row><td>INSTALLDIR</td><td>Microsoft.ReportViewer.ProcessingObjectModel.DLL</td></row>
+		<row><td>INSTALLDIR</td><td>Microsoft.ReportViewer.WinForms.dll</td></row>
+		<row><td>INSTALLDIR</td><td>Microsoft.SqlServer.Types.dll</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1134,6 +1148,7 @@
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
 		<row><td>AdminToolsFolder</td><td>TARGETDIR</td><td>.:Admint~1|AdminTools</td><td/><td>0</td><td/></row>
 		<row><td>AppDataFolder</td><td>TARGETDIR</td><td>.:APPLIC~1|Application Data</td><td/><td>0</td><td/></row>
+		<row><td>BUGSDB</td><td>LIPARTS_SOFTWORKS</td><td>BugsDB</td><td/><td>0</td><td/></row>
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
 		<row><td>CommonFiles64Folder</td><td>TARGETDIR</td><td>.:Common64</td><td/><td>0</td><td/></row>
 		<row><td>CommonFilesFolder</td><td>TARGETDIR</td><td>.:Common</td><td/><td>0</td><td/></row>
@@ -1142,12 +1157,13 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>MY_PRODUCT_NAME</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>BUGSDB</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
 		<row><td>ISMyProductDir</td><td>ISMyCompanyDir</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>ISYourDataBaseDir</td><td>INSTALLDIR</td><td>Database</td><td/><td>0</td><td/></row>
 		<row><td>LAURIS_LIPARTS</td><td>ProgramFilesFolder</td><td>LAURIS~1|Lauris Liparts</td><td/><td>0</td><td/></row>
+		<row><td>LIPARTS_SOFTWORKS</td><td>ProgramFilesFolder</td><td>LIPART~1|Liparts Softworks</td><td/><td>0</td><td/></row>
 		<row><td>LocalAppDataFolder</td><td>TARGETDIR</td><td>.:LocalA~1|LocalAppData</td><td/><td>0</td><td/></row>
 		<row><td>MY_PRODUCT_NAME</td><td>LAURIS_LIPARTS</td><td>BugsDB</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
@@ -1865,6 +1881,13 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>BugsDB.Primary_output</td></row>
+		<row><td>AlwaysInstall</td><td>BugsDB.Primary_output1</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>AlwaysInstall</td><td>Microsoft.ReportViewer.Common.dll</td></row>
+		<row><td>AlwaysInstall</td><td>Microsoft.ReportViewer.DataVisualization.dll</td></row>
+		<row><td>AlwaysInstall</td><td>Microsoft.ReportViewer.ProcessingObjectModel.DLL</td></row>
+		<row><td>AlwaysInstall</td><td>Microsoft.ReportViewer.WinForms.dll</td></row>
+		<row><td>AlwaysInstall</td><td>Microsoft.SqlServer.Types.dll</td></row>
 	</table>
 
 	<table name="File">
@@ -1879,7 +1902,12 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>bugsdb.primary_output</td><td>BugsDB.Primary_output</td><td>BugsDB.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;BugsDB&gt;|Built</td><td>3</td><td/></row>
+		<row><td>bugsdb.primary_output</td><td>BugsDB.Primary_output1</td><td>BugsDB.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;BugsDB&gt;|Built</td><td>3</td><td/></row>
+		<row><td>microsoft.reportviewer.commo</td><td>Microsoft.ReportViewer.Common.dll</td><td>MICROS~1.DLL|Microsoft.ReportViewer.Common.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Admin\Documents\Visual Studio 2013\Projects\bugs-db\bin\Release\Microsoft.ReportViewer.Common.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.reportviewer.datav</td><td>Microsoft.ReportViewer.DataVisualization.dll</td><td>MICROS~1.DLL|Microsoft.ReportViewer.DataVisualization.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Admin\Documents\Visual Studio 2013\Projects\bugs-db\packages\Microsoft.ReportViewer.DataVisualization.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.reportviewer.proce</td><td>Microsoft.ReportViewer.ProcessingObjectModel.DLL</td><td>MICROS~1.DLL|Microsoft.ReportViewer.ProcessingObjectModel.DLL</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Admin\Documents\Visual Studio 2013\Projects\bugs-db\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.DLL</td><td>1</td><td/></row>
+		<row><td>microsoft.reportviewer.winfo</td><td>Microsoft.ReportViewer.WinForms.dll</td><td>MICROS~1.DLL|Microsoft.ReportViewer.WinForms.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Admin\Documents\Visual Studio 2013\Projects\bugs-db\bin\Release\Microsoft.ReportViewer.WinForms.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.sqlserver.types.dl</td><td>Microsoft.SqlServer.Types.dll</td><td>MICROS~1.DLL|Microsoft.SqlServer.Types.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Admin\Documents\Visual Studio 2013\Projects\bugs-db\bin\Release\Microsoft.SqlServer.Types.dll</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2022,6 +2050,13 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>BugsDB.Primary_output</td><td/><td/><td>_53E5F9C1_0AAB_4438_B79A_520CEE749FC7_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>BugsDB.Primary_output1</td><td/><td/><td>_C27AE6B2_5600_40A2_A7D7_7490CC5CFE5E_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_65918748_51B3_4C15_A460_A5F147ED8808_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.ReportViewer.Common.dll</td><td/><td/><td>_36966D4C_A2E1_4FF6_8F6B_28F4527432D6_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.ReportViewer.DataVisualization.dll</td><td/><td/><td>_2C9B3A03_429F_4DD1_ABB4_73A28AD12808_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.ReportViewer.ProcessingObjectModel.DLL</td><td/><td/><td>_9E43930D_8965_4BFD_AC82_C2BF4A773CBB_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.ReportViewer.WinForms.dll</td><td/><td/><td>_DE962924_F17E_4402_B011_DBA7E5D7B80C_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.SqlServer.Types.dll</td><td/><td/><td>_BCE7320A_A865_4575_8347_5B0741F6D6CA_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2610,7 +2645,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Lauris Liparts</td><td>0</td><td/><td>1554306160</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Liparts Softworks</td><td>0</td><td/><td>1688519936</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>1554269359</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>1554269359</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1554275535</td></row>
@@ -3712,8 +3747,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>1554269359</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1554269359</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1554269359</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>https://github.com/nemirst/bugs-db</td><td>0</td><td/><td>1554252944</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Lauris Liparts</td><td>0</td><td/><td>1554306160</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>https://github.com/nemirst/bugs-db</td><td>0</td><td/><td>1688486913</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Liparts Softworks</td><td>0</td><td/><td>1688519936</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>BugsDB</td><td>0</td><td/><td>1554289903</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1554269359</td></row>
 	</table>
@@ -3961,7 +3996,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{B5692C8B-7DBF-42A1-8972-5C49DF057D8F}</td></row>
 		<row><td>ISUSSignature</td><td>{2FD188B6-0209-42CD-9E9E-757B2E596DE2}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewSystemSearch,viewAppFiles,viewObjects</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
